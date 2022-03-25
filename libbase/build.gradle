@@ -1,0 +1,77 @@
+apply from: "${rootDir.path}/gradle/base.gradle"
+
+def librarys = rootProject.ext.dependencies //
+apply plugin: 'maven-publish'
+afterEvaluate {
+    publishing {
+        publications {
+            release(MavenPublication) {
+                from components.release
+
+                groupId = 'com.github.zuo-open'
+                artifactId = 'libbase'
+                version = '1.5'
+
+//                group = PROJ_GROUP
+//                artifactId = PROJ_ARTIFACTID
+//                version = PROJ_VERSION
+
+//                pom {
+//                    name = PROJ_NAME
+//                    description = PROJ_DESCRIPTION
+//                    url = PROJ_VCSURL
+//                    licenses {
+//                        license {
+//                            name = "The Apache License, Version 2.0"
+//                            url = "https://www.apache.org/licenses/LICENSE-2.0.txt"
+//                        }
+//                    }
+//                    developers {
+//                        developer {
+//                            id = DEVELOPER_ID
+//                            name = DEVELOPER_NAME
+//                        }
+//                    }
+//                    scm {
+//                        connection = PROJ_ISSUETRACKERURL
+//                        developerConnection = PROJ_VCSURL
+//                        url = PROJ_WEBSITEURL
+//                    }
+//                }
+            }
+        }
+    }
+}
+
+
+android {
+    defaultConfig {
+        def stValue = "ceshi"
+        manifestPlaceholders = [
+                // DEMO2_CONFIG_VALUE: ".demo2.factorys.MkDemo2Factory1",
+                DEMO2_CONFIG_VALUE: "com.geek.libbase.fragmentsgeek.demo2.factorys.MkDemo2Factory2",
+                DEMO3_CONFIG_VALUE: "com.geek.libbase.fragmentsgeek.demo3.factorys.MkDemo3Factory",
+                DEMO4_CONFIG_VALUE: "com.geek.libbase.fragmentsgeek.demo4.factorys.MkDemo4Factory",
+                STATISTICS_VALUE  : stValue
+        ]
+    }
+//    sourceSets {
+//        main {
+//            jniLibs.srcDirs = ['libs']
+//        }
+//    }
+}
+dependencies {
+    api project(':libutils')
+    api project(':libmvp')
+    api project(':libretrofit')
+    api project(':libswipebacklayout')
+    api project(':libwebview')
+    api project(':libagentweb20')
+    api project(':libglide47')
+    api project(':librararyforfileprovdider')
+    api project(':liblanguage')
+    api project(':libtablayout')
+    api project(':libopendroid')
+
+}

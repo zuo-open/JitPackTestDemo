@@ -1,0 +1,65 @@
+apply from: "${rootDir.path}/gradle/base.gradle"
+apply plugin: 'maven-publish'
+afterEvaluate {
+    publishing {
+        publications {
+            release(MavenPublication) {
+                from components.release
+
+                groupId = 'com.github.zuo-open'
+                artifactId = 'libyanzheng'
+                version = '1.5'
+
+//                group = PROJ_GROUP
+//                artifactId = PROJ_ARTIFACTID
+//                version = PROJ_VERSION
+
+//                pom {
+//                    name = PROJ_NAME
+//                    description = PROJ_DESCRIPTION
+//                    url = PROJ_VCSURL
+//                    licenses {
+//                        license {
+//                            name = "The Apache License, Version 2.0"
+//                            url = "https://www.apache.org/licenses/LICENSE-2.0.txt"
+//                        }
+//                    }
+//                    developers {
+//                        developer {
+//                            id = DEVELOPER_ID
+//                            name = DEVELOPER_NAME
+//                        }
+//                    }
+//                    scm {
+//                        connection = PROJ_ISSUETRACKERURL
+//                        developerConnection = PROJ_VCSURL
+//                        url = PROJ_WEBSITEURL
+//                    }
+//                }
+            }
+        }
+    }
+}
+def librarys = rootProject.ext.dependencies //依赖
+android {
+    sourceSets {
+        main.java.srcDirs += 'src/main/base'
+        main.java.srcDirs += 'src/main/api9'
+        main.java.srcDirs += 'src/main/api14'
+        main.java.srcDirs += 'src/main/api21'
+        main.java.srcDirs += 'src/main/api23'
+    }
+}
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    api project(':libutils')
+    api project(':libretrofit')
+    //
+    api librarys.rxJava2
+    api librarys.rxandroid2
+    api librarys.adapterrxjava2
+
+//    implementation project(path: ':libsCenterNew:opendroid2')
+//    implementation files('../../../otherlibs/alipaySdk-20180601.jar')
+}
+

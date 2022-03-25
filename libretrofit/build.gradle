@@ -1,0 +1,58 @@
+apply from: "${rootDir.path}/gradle/base.gradle"
+apply plugin: 'maven-publish'
+afterEvaluate {
+    publishing {
+        publications {
+            release(MavenPublication) {
+                from components.release
+
+                groupId = 'com.github.zuo-open'
+                artifactId = 'libretrofit'
+                version = '1.5'
+
+//                group = PROJ_GROUP
+//                artifactId = PROJ_ARTIFACTID
+//                version = PROJ_VERSION
+
+//                pom {
+//                    name = PROJ_NAME
+//                    description = PROJ_DESCRIPTION
+//                    url = PROJ_VCSURL
+//                    licenses {
+//                        license {
+//                            name = "The Apache License, Version 2.0"
+//                            url = "https://www.apache.org/licenses/LICENSE-2.0.txt"
+//                        }
+//                    }
+//                    developers {
+//                        developer {
+//                            id = DEVELOPER_ID
+//                            name = DEVELOPER_NAME
+//                        }
+//                    }
+//                    scm {
+//                        connection = PROJ_ISSUETRACKERURL
+//                        developerConnection = PROJ_VCSURL
+//                        url = PROJ_WEBSITEURL
+//                    }
+//                }
+            }
+        }
+    }
+}
+def librarys = rootProject.ext.dependencies //
+dependencies {
+    api project(':libutils')
+    api librarys.retrofit
+    api librarys.retrofitconverters
+    api librarys.retrofitgconvertergson
+    api librarys.retrofitgconverterscalars
+    api librarys.okhttpVersion
+    api librarys.okioVersion
+    api librarys.okhttploggerinter
+    //
+//    implementation 'com.blankj:utilcodex:1.30.6'
+//    implementation "com.squareup.okhttp3:okhttp:4.5.0"
+//    implementation "com.squareup.okhttp3:logging-interceptor:4.5.0"
+//    implementation "com.squareup.okio:okio:2.6.0"
+}
