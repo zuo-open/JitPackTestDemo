@@ -7,4 +7,7 @@ public class MyUtils {
     public static void logTest() {
         Log.e("logTest", "logTest");
     }
+
+    public static void logNew() {
+    }
 }

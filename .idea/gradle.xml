@@ -13,7 +13,6 @@
             <option value="$PROJECT_DIR$" />
             <option value="$PROJECT_DIR$/app" />
             <option value="$PROJECT_DIR$/libutils" />
-            <option value="$PROJECT_DIR$/testModule" />
           </set>
         </option>
         <option name="resolveModulePerSourceSet" value="false" />

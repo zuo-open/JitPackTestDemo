@@ -64,5 +64,5 @@ apply from: "buildconfig.gradle"
 
 rootProject.name = "My Application"
 include ':app'
-include ':testModule'
+//include ':testModule'
 include ':libutils'

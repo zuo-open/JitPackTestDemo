@@ -2,6 +2,8 @@
 
 apply plugin: 'maven-publish'
 apply plugin: 'kotlin-android'
+group = 'com.github.jitpack'
+version = '1.0'
 afterEvaluate {
     publishing {
         publications {
@@ -10,7 +12,7 @@ afterEvaluate {
 
                 groupId = 'com.github.zuo-open'
                 artifactId = 'libutils'
-                version = '1.0'
+                version = '1.4'
 
 //                group = PROJ_GROUP
 //                artifactId = PROJ_ARTIFACTID
