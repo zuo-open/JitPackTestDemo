@@ -37,7 +37,7 @@ afterEvaluate {
             // Creates a Maven publication called "release".
             release(MavenPublication) {
                 from components.release
-                groupId = 'com.zuo'
+                groupId = 'com.github.zuo-open'
                 artifactId = 'JitPackTestDemo'
                 version = '1.0'
             }
