@@ -12,47 +12,7 @@
           <set>
             <option value="$PROJECT_DIR$" />
             <option value="$PROJECT_DIR$/app" />
-            <option value="$PROJECT_DIR$/biz-libs" />
-            <option value="$PROJECT_DIR$/libagentweb20" />
-            <option value="$PROJECT_DIR$/libbase" />
-            <option value="$PROJECT_DIR$/libcitypicker" />
-            <option value="$PROJECT_DIR$/libexpandablerecyclerview" />
-            <option value="$PROJECT_DIR$/libgeek" />
-            <option value="$PROJECT_DIR$/libglide47" />
-            <option value="$PROJECT_DIR$/liblanguage" />
-            <option value="$PROJECT_DIR$/liblinkagerecyclerview" />
-            <option value="$PROJECT_DIR$/liblocations" />
-            <option value="$PROJECT_DIR$/libmvp" />
-            <option value="$PROJECT_DIR$/libncalendar" />
-            <option value="$PROJECT_DIR$/libocr" />
-            <option value="$PROJECT_DIR$/libopendroid" />
-            <option value="$PROJECT_DIR$/libotherlibs" />
-            <option value="$PROJECT_DIR$/libpictureselector" />
-            <option value="$PROJECT_DIR$/librararyforfileprovdider" />
-            <option value="$PROJECT_DIR$/libretrofit" />
-            <option value="$PROJECT_DIR$/libsCenter" />
-            <option value="$PROJECT_DIR$/libsCenterNew" />
-            <option value="$PROJECT_DIR$/libsCenterNew/alipaysdk" />
-            <option value="$PROJECT_DIR$/libsCenterNew/hooklistenerlib2" />
-            <option value="$PROJECT_DIR$/libsCenterNew/libmvpaar" />
-            <option value="$PROJECT_DIR$/libsCenterNew/libretrofitaar" />
-            <option value="$PROJECT_DIR$/libsCenterNew/opendroid2" />
-            <option value="$PROJECT_DIR$/libswipebacklayout" />
-            <option value="$PROJECT_DIR$/libtablayout" />
-            <option value="$PROJECT_DIR$/libupdateapp" />
-            <option value="$PROJECT_DIR$/libutils" />
-            <option value="$PROJECT_DIR$/libwebview" />
-            <option value="$PROJECT_DIR$/libxpopup" />
-            <option value="$PROJECT_DIR$/libxuanzeqi" />
-            <option value="$PROJECT_DIR$/libyanzheng" />
-            <option value="$PROJECT_DIR$/libzxing" />
-            <option value="$PROJECT_DIR$/zdkplayer" />
-            <option value="$PROJECT_DIR$/zdkplayer/dkplayer" />
-            <option value="$PROJECT_DIR$/zdkplayer/dkplayer-java" />
-            <option value="$PROJECT_DIR$/zdkplayer/dkplayer-players" />
-            <option value="$PROJECT_DIR$/zdkplayer/dkplayer-players/ijkexo" />
-            <option value="$PROJECT_DIR$/zdkplayer/dkplayer-ui" />
-            <option value="$PROJECT_DIR$/zdkplayer/dkplayer-videocache" />
+            <option value="$PROJECT_DIR$/testModule" />
           </set>
         </option>
         <option name="resolveModulePerSourceSet" value="false" />

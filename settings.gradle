@@ -65,50 +65,50 @@ apply from: "buildconfig.gradle"
 rootProject.name = "My Application"
 
 // start aar
-include ':libsCenter', ':biz-libs'
-// end aar
-
-// start aar
-include ':libsCenterNew',
-        ':libsCenterNew:alipaysdk',
-        ':libsCenterNew:hooklistenerlib2',
-        ':libsCenterNew:libmvpaar',
-        ':libsCenterNew:libretrofitaar',
-        ':libsCenterNew:opendroid2'
+//include ':libsCenter', ':biz-libs'
+//// end aar
+//
+//// start aar
+//include ':libsCenterNew',
+//        ':libsCenterNew:alipaysdk',
+//        ':libsCenterNew:hooklistenerlib2',
+//        ':libsCenterNew:libmvpaar',
+//        ':libsCenterNew:libretrofitaar',
+//        ':libsCenterNew:opendroid2'
 // end aar
 
 include ':app'
-//include ':testModule'
-include ':libutils'
-include ':libagentweb20'
+include ':testModule'
+//include ':libutils'
+//include ':libagentweb20'
+////include ':libbase'
+//include ':libmvp'
+//include ':libretrofit'
+//include ':libswipebacklayout'
+//include ':libwebview'
+//include ':libglide47'
+//include ':librararyforfileprovdider'
+//include ':libcitypicker'
+//include ':libexpandablerecyclerview'
+//include ':libglide47'
+//include ':liblanguage'
+//include ':liblinkagerecyclerview'
+//include ':liblocations'
+//include ':libncalendar'
+//include ':libocr'
+//include ':libopendroid'
+//include ':libotherlibs'
+//include ':libpictureselector'
+//include ':libtablayout'
+//include ':libupdateapp'
+//include ':libxpopup'
+//include ':libxuanzeqi'
+//include ':libyanzheng'
+//include ':libzxing'
+//include ':zdkplayer:dkplayer-java'
+//include ':zdkplayer:dkplayer-players:ijkexo'
+//include ':zdkplayer:dkplayer'
+//include ':zdkplayer:dkplayer-ui'
+//include ':zdkplayer:dkplayer-videocache'
 //include ':libbase'
-include ':libmvp'
-include ':libretrofit'
-include ':libswipebacklayout'
-include ':libwebview'
-include ':libglide47'
-include ':librararyforfileprovdider'
-include ':libcitypicker'
-include ':libexpandablerecyclerview'
-include ':libglide47'
-include ':liblanguage'
-include ':liblinkagerecyclerview'
-include ':liblocations'
-include ':libncalendar'
-include ':libocr'
-include ':libopendroid'
-include ':libotherlibs'
-include ':libpictureselector'
-include ':libtablayout'
-include ':libupdateapp'
-include ':libxpopup'
-include ':libxuanzeqi'
-include ':libyanzheng'
-include ':libzxing'
-include ':zdkplayer:dkplayer-java'
-include ':zdkplayer:dkplayer-players:ijkexo'
-include ':zdkplayer:dkplayer'
-include ':zdkplayer:dkplayer-ui'
-include ':zdkplayer:dkplayer-videocache'
-include ':libbase'
-include ':libgeek'
+//include ':libgeek'
